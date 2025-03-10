@@ -1,28 +1,16 @@
 //* Implement a function that removes duplicates from an array.
 
-/**
- * Using Set:
- * @param {*} array 
- * @returns 
- */
+// Using Set:
 function removeDuplicatesWithSet(arr) {
     return [...new Set(arr)]
 }
 
-/**
- * Using filter: 
- * @param {*} arr 
- * @returns 
- */
+// Using filter:
 function removeDuplicatesWithFilter(arr) {
     return arr.filter((item, index) => arr.indexOf(item) === index);
 }
 
-/**
- * Using reduce:
- * @param {*} arr 
- * @returns 
- */
+// Using reduce:
 function removeDuplicatesWithReduce(arr) {
     return arr.reduce((acc, item) => {
         if (!acc.includes(item)) {
@@ -32,11 +20,7 @@ function removeDuplicatesWithReduce(arr) {
     }, []);
 }
 
-/**
- * Using for loop:
- * @param {*} arr 
- * @returns 
- */
+//  Using for loop:
 function removeDuplicatesWithForLoop(arr) {
     const uniqueArray = [];
 

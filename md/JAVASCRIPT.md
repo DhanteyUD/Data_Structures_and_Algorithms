@@ -27,6 +27,24 @@ console.log(multiply(2, 3)); // Always outputs 6
 
 ## 3. What is `Function Composition`?
 
-> Function composition is the process of combining two or more functions to produce a new function or perform some computation. 
+> Function composition is the process of combining two or more functions to produce a new function or perform some computation.
 
 > `Note:` The output of one function becomes the input of the next function. It's like chaining functions together.
+
+```javascript
+// Define two functions
+const f = (x) => x + 1;
+const g = (x) => x * 2;
+
+// Compose them
+const h = (x) => f(g(x));
+
+// Use the composed function
+console.log(h(3)); // Output: 7
+```
+
+## 4. What is `Functional Programming`?
+
+> Functional Programming is a style of writing code using pure functions as the primary unit of composition.
+
+

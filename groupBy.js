@@ -1,6 +1,7 @@
 //* Write a function that groups an array of associative arrays based on a specific key
 
-function groupBy(arr, key) {
+// Using reduce:
+function groupByWithReduce(arr, key) {
     return arr.reduce((acc, obj) => {
         const groupValue = obj[key];
 
@@ -13,6 +14,24 @@ function groupBy(arr, key) {
     }, {});
 }
 
+// Using Map:
+function groupByWithMap(arr, key) {
+    const map = new Map();
+
+    arr.forEach(obj => {
+        const groupValue = obj[key];
+
+        if (!map.has(groupValue)) {
+            map.set(groupValue, []);
+        }
+
+        map.get(groupValue).push(obj);
+    });
+
+    return Object.fromEntries(map);
+}
+
+
 const data = [
     { category: "fruit", name: "Apple" },
     { category: "fruit", name: "Banana" },
@@ -21,4 +40,5 @@ const data = [
     { category: "vegetable", name: "Lettuce" }
 ];
 
-console.log(groupBy(data, "category"));
+console.log(groupByWithReduce(data, "category"));
+console.log(groupByWithMap(data, "category"));

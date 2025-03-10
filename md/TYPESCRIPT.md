@@ -1,4 +1,8 @@
-## 1. What is a generic function in `typeScript`?
+## 1. What is `TypeScript`?
+
+> TypeScript is a super-set of JavaScript that adds static typing and other features to help developers write more robust and maintainable code.
+
+## 2. What is a generic function in `typeScript`?
 
 > A generic function is a function that creates reusables components that works with multiple types while maintaining type safety.
 
@@ -11,7 +15,7 @@ console.log(identity<number>(42)); // Output: 42
 console.log(identity<string>("Hello")); // Output: "Hello"
 ```
 
-## 2. What is `"As Const"` in typeScript?
+## 3. What is `"As Const"` in typeScript?
 
 > `as const` is a powerful feature in TypeScript that ensures immutability and narrows type inference to the most specific, literal types.
 

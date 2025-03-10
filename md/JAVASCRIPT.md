@@ -25,4 +25,8 @@ const multiply = (a, b) => a * b;
 console.log(multiply(2, 3)); // Always outputs 6
 ```
 
-## 3.
+## 3. What is `Function Composition`?
+
+> Function composition is the process of combining two or more functions to produce a new function or perform some computation. 
+
+> `Note:` The output of one function becomes the input of the next function. It's like chaining functions together.

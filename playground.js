@@ -1,1 +1,1 @@
-// Solve problems here 👨🏾‍💻
+// Solve JS problems here 👨🏾‍💻

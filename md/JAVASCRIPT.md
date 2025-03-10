@@ -47,4 +47,7 @@ console.log(h(3)); // Output: 7
 
 > Functional Programming is a style of writing code using pure functions as the primary unit of composition.
 
+## 5. What is a `Promise`?
+
+> A Promise is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value.
 

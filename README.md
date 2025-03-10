@@ -5,4 +5,4 @@
 
 3. Reverse a linked list in JavaScript.
 
-   > <a href="https://github.com/DhanteyUD/Playground/blob/main/reverseLinkedList.js">removeDuplicates</a>
+   > <a href="https://github.com/DhanteyUD/Playground/blob/main/reverseLinkedList.js">reverseLinkedList</a>
